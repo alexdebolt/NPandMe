@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import DroneVideo from './components/Drone/droneVideo';
+
+class App extends React.Component {
+  render () {
+    return (
+      <div>
+        <h1>NP & Me</h1>
+        <div className="App">
+          {/* <SearchBar /> */}
+          <div className="droneVideo">
+            <DroneVideo />
+          </div>
+          <div className="NationalParkList">
+            <h3>United States National Parks</h3>
+            {/* <NPList /> */}
+          </div>
+        </div>
+      </div>
+    )
+  }
 }
 
 export default App;
